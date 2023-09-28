@@ -1,0 +1,12 @@
+[
+	{
+		"file": "/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Source/RacingGameTest2/Racecar.cpp",
+		"command": "\"/home/coderman64/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++\" @\"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Intermediate/Build/Linux/x64/UnrealGame/Development/RacingGameTest2/Racecar.cpp.o.rsp.gcd\" -isystem\"/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/lib/clang/16/include/\"",
+		"directory": "/home/coderman64/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Source/RacingGameTest2/RacingGameTest2.cpp",
+		"command": "\"/home/coderman64/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++\" @\"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Intermediate/Build/Linux/x64/UnrealGame/Development/RacingGameTest2/RacingGameTest2.cpp.o.rsp.gcd\" -isystem\"/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/lib/clang/16/include/\"",
+		"directory": "/home/coderman64/UnrealEngine/Engine/Source"
+	}
+]

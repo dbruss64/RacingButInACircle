@@ -1,0 +1,868 @@
+{
+	"folders": [
+		{
+			"name": "RacingGameTest2",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "RacingGameTest2 Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Test",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Test",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Test",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Shipping",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Shipping",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"Linux",
+					"Shipping",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Test",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Test",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Test",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Shipping",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Shipping",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2 LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2 LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2",
+					"LinuxArm64",
+					"Shipping",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2Editor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"Debug",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2Editor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"DebugGame",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RacingGameTest2Editor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			},
+			{
+				"label": "RacingGameTest2Editor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"RacingGameTest2Editor",
+					"Linux",
+					"Development",
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch RacingGameTest2 (Debug)",
+				"request": "launch",
+				"program": "/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "RacingGameTest2 Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch RacingGameTest2 (DebugGame)",
+				"request": "launch",
+				"program": "/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "RacingGameTest2 Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch RacingGameTest2 (Development)",
+				"request": "launch",
+				"program": "/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "RacingGameTest2 Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch RacingGameTest2 (Test)",
+				"request": "launch",
+				"program": "/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "RacingGameTest2 Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch RacingGameTest2 (Shipping)",
+				"request": "launch",
+				"program": "/home/coderman64/Documents/Unreal Projects/RacingGameTest2/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "RacingGameTest2 Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch RacingGameTest2Editor (Debug)",
+				"request": "launch",
+				"program": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "RacingGameTest2Editor Linux Debug Build",
+				"args": [
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject"
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch RacingGameTest2Editor (DebugGame)",
+				"request": "launch",
+				"program": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "RacingGameTest2Editor Linux DebugGame Build",
+				"args": [
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject"
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch RacingGameTest2Editor (Development)",
+				"request": "launch",
+				"program": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "RacingGameTest2Editor Linux Development Build",
+				"args": [
+					"/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject"
+				],
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0",
+				"type": "cppdbg",
+				"visualizerFile": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/coderman64/Documents/Unreal Projects/RacingGameTest2/RacingGameTest2.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/coderman64/UnrealEngine/Linux_Unreal_Engine_5.3.0"
+			}
+		]
+	}
+}
